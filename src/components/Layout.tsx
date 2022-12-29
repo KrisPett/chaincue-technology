@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from "./Footer";
+import Header from "./Header";
 
 type Props = {
   children: JSX.Element
@@ -7,11 +8,11 @@ type Props = {
 
 const Layout = ({children}: Props) => {
   return (
-    <>
-      {/*<Navbar/>*/}
+    <div className={"mx-auto max-w-full"}>
+      <Header/>
       <main>{children}</main>
       <Footer/>
-    </>
+    </div>
   )
 }
 

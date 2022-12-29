@@ -12,7 +12,6 @@ module.exports = withBundleAnalyzer({
             test: /\.svg$/,
             use: ['@svgr/webpack'],
         })
-
         if (!dev && !isServer) {
             Object.assign(config.resolve.alias, {
                 'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
@@ -21,7 +20,6 @@ module.exports = withBundleAnalyzer({
                 'react-dom': 'preact/compat',
             })
         }
-
         return config
     },
 })

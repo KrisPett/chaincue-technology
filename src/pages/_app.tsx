@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 export default function App({Component, pageProps}: AppProps) {
   return (
-    <ThemeProvider themes={["light", "dark"]}>
+    <ThemeProvider attribute={"class"} defaultTheme={"system"} themes={["light", "dark"]}>
       <Head>
         <meta name="description" content="chaincue-technology"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
