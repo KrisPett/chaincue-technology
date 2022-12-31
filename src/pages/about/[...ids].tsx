@@ -3,14 +3,17 @@ import {useRouter} from "next/router";
 
 const Ids = () => {
   const router = useRouter()
-  const slug = (router.query.ids as string[]) || []
+
+  const ids = (router.query.ids as string[]) || []
+  const name = (router.query.name as string)
 
   return (
     <div>
-      {slug.map(i => {
+      {ids.map(i => {
         return <div key={i}>{i}</div>
       })}
       Slug
+      name: {name}
     </div>
   );
 };
