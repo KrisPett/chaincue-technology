@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config}*/
 module.exports = {
-    content: ['./src/**/*.{js,ts,jsx,tsx}'],
+    content: [
+        './src/**/*.{js,ts,jsx,tsx}',
+        // "./node_modules/flowbite/**/*.js"
+        "./node_modules/flowbite/**/*.js",
+        "./node_modules/flowbite-react/**/*.js",
+    ],
     darkMode: 'class',
     theme: {
         screens: {
@@ -24,5 +29,9 @@ module.exports = {
             },
         },
     },
-    plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
+        require('flowbite/plugin')
+    ],
 }

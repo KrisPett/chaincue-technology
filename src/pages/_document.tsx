@@ -1,4 +1,5 @@
 import {Html, Head, Main, NextScript} from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -12,8 +13,11 @@ export default function Document() {
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff"/>
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"/>
         <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
+        <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js" async></script>
+        {/*<script src="../path/to/flowbite/dist/flowbite.js"></script>*/}
+        {/*<script src="../../node_modules/flowbite/dist/flowbite.js"></script>*/}
       </Head>
-      <body className="bg-white text-black dark:bg-gray-900 dark:text-white">
+      <body className="bg-white text-black dark:bg-neutral-700 dark:text-white">
       <Main/>
       <NextScript/>
       </body>
