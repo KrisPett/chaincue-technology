@@ -13,9 +13,8 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#000000"/>
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff"/>
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"/>
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
       </Head>
-      <body className="bg-white text-black dark:bg-neutral-700 dark:text-white">
+      <body className="light:bg-white text-black dark:bg-zinc-700 dark:text-white">
       <Main/>
       <NextScript/>
       </body>

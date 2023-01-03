@@ -5,6 +5,7 @@ import Facebook from '../assets/icons/facebook.svg';
 import Youtube from '../assets/icons/youtube.svg';
 import Linkedin from '../assets/icons/linkedin.svg';
 import Twitter from '../assets/icons/twitter.svg';
+import Gitlab from '../assets/icons/gitlab.svg';
 
 interface ISocialIcon {
   kind: string;
@@ -18,6 +19,7 @@ const components: Record<string, typeof Mail | typeof Github | typeof Facebook |
   youtube: Youtube,
   linkedin: Linkedin,
   twitter: Twitter,
+  gitlab: Gitlab,
 }
 
 const SocialIcon = ({kind, href}: ISocialIcon) => {

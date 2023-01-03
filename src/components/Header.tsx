@@ -3,10 +3,12 @@ import Image from 'next/image'
 import ChainLogoWhite from "../assets/image/chaincue-logo-crop1-white.png";
 import SocialIcon from "./SocialIcon";
 import IconHeader from "./IconHeader";
+import Drawer from "./Drawer";
+import ThemeSwitch from "./ThemeSwitch ";
 
 const Header = () => {
   return (
-    <header className={"bg-neutral-50 dark:bg-neutral-600"}>
+    <header className={"bg-zinc-50 dark:bg-zinc-600"}>
       <div className={"flex items-center justify-between py-3"}>
         <div className={"ml-3"}>
           <a href={"#"}>
@@ -32,8 +34,10 @@ const Header = () => {
           <IconHeader kind={"gitlab"} href={"#"}/>
           <IconHeader kind={"twitter"} href={"#"}/>
           <IconHeader kind={"linkedin"} href={"#"}/>
+          <ThemeSwitch/>
         </div>
       </div>
+      <Drawer/>
     </header>
   )
 }

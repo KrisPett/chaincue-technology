@@ -7,10 +7,9 @@ const Footer = () => {
       <div className={"mt-16 flex flex-col items-center"}>
         <div className={"mb-3 flex space-x-4"}>
           <SocialIcon kind={"github"} href={"#"} />
-          <SocialIcon kind={"facebook"} href={"#"}/>
-          <SocialIcon kind={"youtube"} href={"#"} />
-          <SocialIcon kind={"linkedin"} href={"#"} />
+          <SocialIcon kind={"gitlab"} href={"#"}/>
           <SocialIcon kind={"twitter"} href={"#"} />
+          <SocialIcon kind={"linkedin"} href={"#"} />
         </div>
       </div>
     </footer>
