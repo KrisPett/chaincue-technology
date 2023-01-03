@@ -14,8 +14,6 @@ export default function Document() {
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff"/>
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"/>
         <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
-        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
-        <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js" defer></script>
       </Head>
       <body className="bg-white text-black dark:bg-neutral-700 dark:text-white">
       <Main/>
