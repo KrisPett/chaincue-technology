@@ -37,7 +37,14 @@ const Header = () => {
           <ThemeSwitch/>
         </div>
       </div>
-      <Drawer/>
+      <div className="btn-group">
+        <button className="btn glass">Glass button</button>
+        <button className="btn btn-outline btn-info">Info</button>
+        <button className="btn btn-outline btn-success">Success</button>
+        <button className="btn btn-outline btn-warning">Warning</button>
+        <button className="btn btn-outline btn-error">Error</button>
+      </div>
+      {/*<Drawer/>*/}
     </header>
   )
 }
