@@ -14,7 +14,7 @@ export default function Document() {
         <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff"/>
         <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"/>
       </Head>
-      <body className="light:bg-white text-black dark:bg-zinc-700 dark:text-white">
+      <body className="light:bg-white text-black dark:bg-zinc-700 dark:text-white ">
       <Main/>
       <NextScript/>
       </body>
