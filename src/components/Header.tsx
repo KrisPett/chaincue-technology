@@ -19,7 +19,7 @@ const Header = () => {
     <header className={"bg-zinc-50 dark:bg-zinc-600"}>
       <div className={"flex items-center justify-between py-3"}>
         <div className={"flex"}>
-          <div className={"ml-3"}>
+          <div>
             <a href={"#"} className="btn btn-ghost hover:bg-transparent">
               <Image src={isTheme === "light" ? ChainLogoWhite : ChainLogoDark} alt="" width={300} height={300}
                      className="min-w-full" priority={true}/>
@@ -43,22 +43,26 @@ const Header = () => {
                       <li><a>CryptoApp</a></li>
                     </ul>
                   </li>
-                  <li><Link href="/about" className={"btn btn-ghost hover:text-orange-800 dark:hover:text-orange-500"}>About</Link></li>
-                  <li><Link href="/contact" className={"btn btn-ghost hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link></li>
+                  <li><Link href="/about"
+                            className={"btn btn-ghost hover:text-orange-800 dark:hover:text-orange-500"}>About</Link>
+                  </li>
+                  <li><Link href="/contact"
+                            className={"btn btn-ghost hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link>
+                  </li>
                 </ul>
               </div>
             </ul>
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-1 mr-2">
+        <div className="flex flex-wrap justify-center gap-1 mr-4">
           <div className={" flex mr-2"}>
             <ThemeSwitch1/>
           </div>
-          <IconHeader kind={"github"} href={"#"}/>
-          <IconHeader kind={"gitlab"} href={"#"}/>
-          <IconHeader kind={"twitter"} href={"#"}/>
-          <IconHeader kind={"linkedin"} href={"#"}/>
+          <IconHeader kind={"github"} href={"#"} tooltip={"Github"}/>
+          <IconHeader kind={"gitlab"} href={"#"} tooltip={"Gitlab"}/>
+          <IconHeader kind={"twitter"} href={"#"} tooltip={"Twitter"}/>
+          <IconHeader kind={"linkedin"} href={"#"} tooltip={"LinkedIn"}/>
         </div>
       </div>
     </header>
