@@ -15,7 +15,7 @@ const Ids = () => {
       Slug
       name: {name}
     </div>
-  );
-};
+  )
+}
 
 export default Ids;

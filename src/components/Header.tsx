@@ -4,7 +4,8 @@ import ChainLogoWhite from "../assets/image/chaincue-logo-crop1-white.png";
 import SocialIcon from "./SocialIcon";
 import IconHeader from "./IconHeader";
 import Drawer from "./Drawer";
-import ThemeSwitch from "./ThemeSwitch ";
+import ThemeSwitch2 from "./ThemeSwitch2";
+import ThemeSwitch1 from "./ThemeSwitch1";
 
 const Header = () => {
   return (
@@ -34,7 +35,7 @@ const Header = () => {
           <IconHeader kind={"gitlab"} href={"#"}/>
           <IconHeader kind={"twitter"} href={"#"}/>
           <IconHeader kind={"linkedin"} href={"#"}/>
-          <ThemeSwitch/>
+          <ThemeSwitch1/>
         </div>
       </div>
       <div className="btn-group">
@@ -44,7 +45,7 @@ const Header = () => {
         <button className="btn btn-outline btn-warning">Warning</button>
         <button className="btn btn-outline btn-error">Error</button>
       </div>
-      {/*<Drawer/>*/}
+      <Drawer/>
     </header>
   )
 }
