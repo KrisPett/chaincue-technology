@@ -1,11 +1,16 @@
 import Head from 'next/head'
-import {Inter} from '@next/font/google'
 import {useTheme} from "next-themes";
 
-const inter = Inter({subsets: ['latin']})
+const ISSERVER = typeof window === "undefined";
+
+if(!ISSERVER) {
+  if (!localStorage.getItem("theme"))
+    localStorage.setItem("theme", "dark");
+}
 
 export default function Home() {
   const {theme, setTheme} = useTheme()
+
   return (
     <>
       <Head>
