@@ -5,7 +5,6 @@ https://github.dev/bketelsen/spotlight
 https://github.com/bradtraversy/next-crash-course
 ```
 
-
 ```
 yarn
 yarn dev
