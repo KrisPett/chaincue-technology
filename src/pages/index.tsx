@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <div>
           <h1 className="text-3xl font-bold">
-           KQT33
+           KQT334
           </h1>
           <select value={theme} onChange={e => setTheme(e.target.value)}>
             <option value="system">System</option>
