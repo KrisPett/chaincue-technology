@@ -1,0 +1,19 @@
+# docker stop chaincuet && docker rm chaincuet && docker rmi chaincuet
+# docker build -t chaincuet .
+# docker-compose up
+
+version: '3.7'
+
+services:
+  gt3music-client:
+    container_name: chaincuet
+    image: chaincuet:latest
+    ports:
+      - "3000:80"
+    networks:
+      - chaincue-tech-net
+
+networks:
+  chaincue-tech-net:
+    name: chaincue-tech-net
+    driver: bridge
