@@ -12,7 +12,8 @@ const links = {
   gitlab: "https://gitlab.com/KQT3",
   twitter: "https://twitter.com/chaincue",
   linkedin: "https://www.linkedin.com/in/kristoffer-pettersson3/",
-  crypto_app: "https://crypto.chaincuet.com/"
+  crypto_app: "https://crypto.chaincuet.com/",
+  chain_music: "https://chainmusic.chaincuet.com/",
 }
 
 const Header = () => {
@@ -47,7 +48,7 @@ const Header = () => {
                       </svg>
                     </a>
                     <ul className="p-4 bg-zinc-100 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
-                      <li className={"mt-0"}><Link href={"/"} className={"w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Chainqt3</Link></li>
+                      <li className={"mt-0"}><Link href={links.chain_music} className={"w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>ChainMusic</Link></li>
                       <li><Link href={links.crypto_app} className={"w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>CryptoApp</Link></li>
                     </ul>
                   </li>
