@@ -14,6 +14,7 @@ const links = {
   linkedin: "https://www.linkedin.com/in/kristoffer-pettersson3/",
   crypto_app: "https://crypto.chaincuet.com/",
   chain_music: "https://chainmusic.chaincuet.com/",
+  wiki: "https://wiki.chaincuet.com/",
 }
 
 const Header = () => {
@@ -57,6 +58,9 @@ const Header = () => {
                   </li>
                   <li><Link href="/contact"
                             className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link>
+                  </li>
+                  <li><Link href={links.wiki} target={"_blank"}
+                            className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Wiki</Link>
                   </li>
                 </ul>
               </div>
