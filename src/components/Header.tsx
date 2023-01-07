@@ -7,6 +7,13 @@ import ThemeSwitch1 from "./ThemeSwitch1";
 import {useTheme} from "next-themes";
 import Link from "next/link";
 
+const links = {
+  github: "https://github.com/KQT3",
+  gitlab: "https://gitlab.com/KQT3",
+  twitter: "https://twitter.com/chaincue",
+  linkedin: "https://www.linkedin.com/in/kristoffer-pettersson3/"
+}
+
 const Header = () => {
   const {theme, setTheme, resolvedTheme} = useTheme()
   const [isTheme, setIsTheme] = useState<string>();
@@ -59,10 +66,10 @@ const Header = () => {
           <div className={" flex mr-2"}>
             <ThemeSwitch1/>
           </div>
-          <IconHeader kind={"github"} href={"#"} tooltip={"Github"}/>
-          <IconHeader kind={"gitlab"} href={"#"} tooltip={"Gitlab"}/>
-          <IconHeader kind={"twitter"} href={"#"} tooltip={"Twitter"}/>
-          <IconHeader kind={"linkedin"} href={"#"} tooltip={"LinkedIn"}/>
+          <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
+          <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
+          <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
+          <IconHeader kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
         </div>
       </div>
     </header>
