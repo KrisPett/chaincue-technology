@@ -6,6 +6,7 @@ import Youtube from '../assets/icons/youtube.svg';
 import Linkedin from '../assets/icons/linkedin.svg';
 import Twitter from '../assets/icons/twitter.svg';
 import Gitlab3 from '../assets/icons/gitlab.svg';
+import Blank from '../assets/icons/blank.svg';
 
 interface ISocialIcon {
   kind: string;
@@ -22,6 +23,7 @@ const components: any = {
   linkedin: Linkedin,
   twitter: Twitter,
   gitlab: Gitlab3,
+  blank: Blank,
 }
 
 const IconHeader = ({kind, href, tooltip, _blank}: ISocialIcon) => {
