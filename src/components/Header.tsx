@@ -20,6 +20,15 @@ const links = {
 const Header = () => {
   const {theme, setTheme, resolvedTheme} = useTheme()
   const [isTheme, setIsTheme] = useState<string>();
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
 
   useEffect(() => {
     setIsTheme(theme);
