@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Image from 'next/image'
-import ChainLogoDark from "../assets/image/chaincue-logo-crop1-dark.png";
-import ChainLogoWhite from "../assets/image/chaincue-logo-crop1-white.png";
+import ChainLogoDark from "../../assets/image/chaincue-logo-crop1-dark.png";
+import ChainLogoWhite from "../../assets/image/chaincue-logo-crop1-white.png";
 import IconHeader from "./IconHeader";
 import ThemeSwitch1 from "./ThemeSwitch1";
 import {useTheme} from "next-themes";
@@ -44,7 +44,6 @@ const Header = () => {
                      className="min-w-full" priority={true}/>
             </a>
           </div>
-
           <div>
             <ul className={"flex space-x-1"}>
               <div className="navbar-center hidden lg:flex">
@@ -101,10 +100,12 @@ const Header = () => {
           <div className={" flex mr-2"}>
             <ThemeSwitch1/>
           </div>
-          <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
-          <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
-          <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
-          <IconHeader kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
+          <div className={"hidden sm:flex"}>
+            <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
+            <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
+            <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
+            <IconHeader kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
+          </div>
         </div>
       </div>
     </header>

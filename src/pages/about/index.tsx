@@ -1,5 +1,6 @@
 import React from 'react';
-import {PageSEO} from "../../components/SEO";
+import {PageSEO} from "../../components/layout/SEO";
+
 
 const Index = () => {
 

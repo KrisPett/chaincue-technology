@@ -1,11 +1,11 @@
 import React from 'react';
-import Mail from '../assets/icons/mail.svg';
-import Github from '../assets/icons/github.svg';
-import Facebook from '../assets/icons/facebook.svg';
-import Youtube from '../assets/icons/youtube.svg';
-import Linkedin from '../assets/icons/linkedin.svg';
-import Twitter from '../assets/icons/twitter.svg';
-import Gitlab from '../assets/icons/gitlab.svg';
+import Mail from '../../assets/icons/mail.svg';
+import Github from '../../assets/icons/github.svg';
+import Facebook from '../../assets/icons/facebook.svg';
+import Youtube from '../../assets/icons/youtube.svg';
+import Linkedin from '../../assets/icons/linkedin.svg';
+import Twitter from '../../assets/icons/twitter.svg';
+import Gitlab from '../../assets/icons/gitlab.svg';
 
 interface ISocialIcon {
   kind: string;
