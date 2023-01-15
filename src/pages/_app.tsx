@@ -4,6 +4,12 @@ import {ThemeProvider} from 'next-themes'
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
 
+const isServer = typeof window === "undefined";
+
+if (!isServer) {
+  if (!localStorage.getItem("theme"))
+    localStorage.setItem("theme", "dark");
+}
 
 export default function App({Component, pageProps}: AppProps) {
   return (

@@ -5,7 +5,7 @@ import {PageSEO} from "../../components/layout/SEO";
 const Index = () => {
   return (
     <>
-      <PageSEO title={"Chaincue | Contact"} description={"Chaincue | Contact"}/>
+      <PageSEO title={"Chaincue | ContactView"} description={"Chaincue | ContactView"}/>
       <div>Contact</div>
     </>
   )

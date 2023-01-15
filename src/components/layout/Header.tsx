@@ -39,24 +39,24 @@ const Header = () => {
       <div className={"flex items-center justify-between py-3"}>
         <div className={"flex"}>
           <div>
-            <a href={"#"} className="btn btn-ghost hover:bg-transparent">
+            <Link href={"/"} className="btn btn-ghost hover:bg-transparent">
               <Image src={isTheme === "light" ? ChainLogoWhite : ChainLogoDark} alt="" width={300} height={300}
                      className="min-w-full" priority={true}/>
-            </a>
+            </Link>
           </div>
           <div>
             <ul className={"flex space-x-1"}>
               <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 ">
+                <ul className="menu menu-horizontal px-1">
                   <li>
-                    <a
-                      className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>
+                    <div
+                      className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500 active:bg-zinc-300 dark:active:bg-zinc-600"}>
                       Projects
                       <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                            viewBox="0 0 24 24">
                         <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
                       </svg>
-                    </a>
+                    </div>
                     <ul
                       className="p-4 bg-zinc-100 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
                       <li className={"mt-0"}><Link href={links.chain_music}
@@ -81,9 +81,9 @@ const Header = () => {
                           Wiki
                         </div>
                         <div>
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                                stroke="currentColor" className="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
+                            <path strokeLinecap="round" strokeLinejoin="round"
                                   d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
                           </svg>
                         </div>

@@ -6,7 +6,7 @@ const Index = () => {
 
   return (
     <>
-      <PageSEO title={"Chaincue | About"} description={"Chaincue | About"}/>
+      <PageSEO title={"Chaincue | AboutView"} description={"Chaincue | AboutView"}/>
       <div>About</div>
     </>
   )
