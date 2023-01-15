@@ -47,25 +47,29 @@ const Header = () => {
           <div>
             <ul className={"flex space-x-1"}>
               <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className=" flex px-1">
                   <li>
-                    <div
-                      className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500 active:bg-zinc-300 dark:active:bg-zinc-600"}>
-                      Projects
-                      <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                           viewBox="0 0 24 24">
-                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
-                      </svg>
+                    <div className="dropdown dropdown-hover dropdown-bottom">
+                      <label tabIndex={0}
+                             className="btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500">
+                        Projects
+                        <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                             viewBox="0 0 24 24">
+                          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                        </svg>
+                      </label>
+                      <ul tabIndex={0}
+                          className="dropdown-content menu rounded-lg p-4 bg-zinc-100 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
+                        <li className={"mt-0"}><Link href={links.chain_music}
+                                                     className={"xxs:w-40 xs:w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>ChainMusic</Link>
+                        </li>
+                        <li><Link href={links.crypto_app}
+                                  className={"xxs:w-40 xs:w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>
+                          CryptoApp
+                        </Link>
+                        </li>
+                      </ul>
                     </div>
-                    <ul
-                      className="p-4 bg-zinc-100 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
-                      <li className={"mt-0"}><Link href={links.chain_music}
-                                                   className={"w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>ChainMusic</Link>
-                      </li>
-                      <li><Link href={links.crypto_app}
-                                className={"w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>CryptoApp</Link>
-                      </li>
-                    </ul>
                   </li>
                   <li><Link href="/about"
                             className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About</Link>
