@@ -4,12 +4,12 @@ import Button from "./Button";
 
 const HomeView = () => {
   return (
-    <div className={"flex flex-col justify-center  items-center mt-10"}>
+    <div className={"flex flex-col justify-center  items-center mt-20"}>
       <div className="flex flex-col xs:flex-row justify-center items-center w-5/6">
         <Button title={"View Projects"}/>
         <Button title={"Get a Demo"}/>
       </div>
-      <article className={"flex flex-col w-5/6 lg:w-4/6 2xl:w-3/6 space-y-5 my-10"}>
+      <article className={"flex flex-col w-5/6 lg:w-4/6 2xl:w-3/6 space-y-5 my-20"}>
         <p className={"whitespace-normal"}>Chaincue Technologies is a company that specializes in providing solutions
           using microservices and blockchain technologies.</p>
         <p>As an example, lets say that Chaincue Technologies is working with a large e-commerce company to improve the

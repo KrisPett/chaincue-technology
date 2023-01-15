@@ -20,7 +20,7 @@ export default function App({Component, pageProps}: AppProps) {
       </Head>
       <Layout>
         <Component {...pageProps} />
-      </Layout>/
+      </Layout>
     </ThemeProvider>
   )
 }

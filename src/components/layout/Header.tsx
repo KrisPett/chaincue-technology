@@ -35,7 +35,7 @@ const Header = () => {
   }, [theme])
 
   return (
-    <header className={"bg-zinc-50 dark:bg-zinc-600 dark:bg-gradient-to-r from-zinc-600 to-gray-500"}>
+    <header className={"bg-zinc-300 dark:bg-zinc-600 dark:bg-gradient-to-r from-zinc-600 to-gray-500"}>
       <div className={"flex items-center justify-between py-3"}>
         <div className={"flex"}>
           <div>
@@ -59,7 +59,7 @@ const Header = () => {
                         </svg>
                       </label>
                       <ul tabIndex={0}
-                          className="dropdown-content menu rounded-lg p-4 bg-zinc-100 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
+                          className="dropdown-content menu rounded-lg p-4 bg-zinc-300 dark:bg-zinc-600 space-y-4 dark:bg-gradient-to-b from-zinc-600 to-gray-500">
                         <li className={"mt-0"}><Link href={links.chain_music}
                                                      className={"xxs:w-40 xs:w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>ChainMusic</Link>
                         </li>

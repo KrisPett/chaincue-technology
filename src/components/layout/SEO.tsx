@@ -16,7 +16,6 @@ const CommonSEO = ({ title, description }: ICommonSEO) => {
 }
 
 export const PageSEO = ({ title, description }: ICommonSEO) => {
-
   return (
     <CommonSEO
       title={title}
