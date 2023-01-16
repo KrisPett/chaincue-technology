@@ -30,8 +30,11 @@ module.exports = {
             '2xl': '1536px',
         },
         fontFamily: {
-            sans: ['Graphik', 'sans-serif'],
-            serif: ['Merriweather', 'serif'],
+            'sans': ['Helvetica', 'Arial', 'sans-serif'],
+            'serif': ['ui-serif', 'Georgia'],
+            'mono': ['ui-monospace', 'SFMono-Regular'],
+            'display': ['Oswald'],
+            'body': ['"Open Sans"'],
         },
         extend: {
             spacing: {

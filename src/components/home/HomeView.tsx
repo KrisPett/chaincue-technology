@@ -1,8 +1,18 @@
 import React from 'react';
-import ButtonAlternative from "./ButtonAlternative";
 import Button from "./Button";
+import Image from 'next/image'
+import springCloudLogo from '../../assets/image/spring-cloud.png';
+import dockerLogo from '../../assets/image/docker-kubernetes.png';
+import awsLogo from '../../assets/image/aws.png';
+import polkadotLogo from '../../assets/image/polkadot-logo.png';
+import cardanoLogo from '../../assets/image/cardano-logo.png';
 
 const HomeView = () => {
+
+  const myLoader = ({src, width, quality}: any) => {
+    return `../../assets/image/spring-cloud.png`
+  }
+
   return (
     <div className={"flex flex-col justify-center  items-center mt-20"}>
       <div className="flex flex-col xs:flex-row justify-center items-center w-5/6">
@@ -28,6 +38,29 @@ const HomeView = () => {
         <p>Overall, by using microservices and blockchain technologies, Chaincue Technologies helps companies improve
           the scalability and security of their web application, positioning the company for success in the future.</p>
       </article>
+      <section className={"flex flex-col gap-5 mt-10 p-5"}>
+        <p className={"uppercase font-mono text-center text-xl"}>Trusted Technologies We Use</p>
+        <div className={"flex items-center md:space-x-14"}>
+          <div>
+            <Image src={springCloudLogo} alt="spring-cloud-logo" width={100} height={100}/>
+            <p>Spring Cloud</p>
+          </div>
+          <div>
+            <Image src={dockerLogo} alt="dockerLogo" width={200} height={200}/>
+          </div>
+          <div>
+            <Image src={awsLogo} alt="awsLogo" width={100} height={100}/>
+          </div>
+        </div>
+        <div className={"flex mt-5 md:space-x-24"}>
+          <div>
+            <Image src={polkadotLogo} alt="polkadotLogo" width={200} height={100}/>
+          </div>
+          <div>
+            <Image src={cardanoLogo} alt="cardanoLogo" width={200} height={100}/>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
