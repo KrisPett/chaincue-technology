@@ -72,7 +72,7 @@ const Header = () => {
                     </div>
                   </li>
                   <li><Link href="/about"
-                            className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About</Link>
+                            className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About me</Link>
                   </li>
                   <li><Link href="/contact"
                             className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link>
