@@ -44,9 +44,9 @@ const ContactView = () => {
   }
 
   const onClickButton = () => {
-    const errors = validateForm();
+    const errors = validateForm()
     if(Object.values(errors).every(error => error === '')) {
-      setForm({name: '', email: '', message: ''});
+      setForm({name: '', email: '', message: ''})
     }
     console.log("send")
     console.log(form)
@@ -76,7 +76,7 @@ const ContactView = () => {
                    value={form.email}
                    onChange={e => onTextEmail(e.target.value)}
                    className={`input input-bordered focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
-                    ${errors.email ? 'border-red-500' : 'border-0'}
+                    ${errors.email ? 'border-red-500' : 'border-2'}
                     text-gray-800 bg-zinc-200 dark:text-gray-100 dark:bg-zinc-600 dark:placeholder-neutral-content/70`}/>
           </div>
           <div className="form-control">
@@ -88,7 +88,7 @@ const ContactView = () => {
               onChange={e => onTextMessage(e.target.value)}
               className={`textarea textarea-bordered h-40
                 focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
-                ${errors.message ? 'border-red-500' : 'border-0'}
+                ${errors.message ? 'border-red-500' : 'border-2'}
                 text-gray-800 bg-zinc-200 dark:text-gray-100 dark:bg-zinc-600 dark:placeholder-neutral-content/70`}
               placeholder="Type your message"></textarea>
           </div>
