@@ -65,7 +65,7 @@ const ContactView = () => {
             <input type="text" placeholder="Type here"
                    value={form.name}
                    onChange={e => onTextName(e.target.value)}
-                   className={`input input-bordered focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
+                   className={`input input-bordered border-gray-400 focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
                     text-gray-800 bg-zinc-200 dark:text-gray-100 dark:bg-zinc-600 dark:placeholder-neutral-content/70`}/>
           </div>
           <div className="form-control">
@@ -76,7 +76,7 @@ const ContactView = () => {
                    value={form.email}
                    onChange={e => onTextEmail(e.target.value)}
                    className={`input input-bordered focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
-                    ${errors.email ? 'border-red-500' : 'border-2'}
+                    ${errors.email ? 'border-red-500' : 'border-gray-400'}
                     text-gray-800 bg-zinc-200 dark:text-gray-100 dark:bg-zinc-600 dark:placeholder-neutral-content/70`}/>
           </div>
           <div className="form-control">
@@ -88,7 +88,7 @@ const ContactView = () => {
               onChange={e => onTextMessage(e.target.value)}
               className={`textarea textarea-bordered h-40
                 focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 dark:focus-visible:ring-offset-orange-600
-                ${errors.message ? 'border-red-500' : 'border-2'}
+                ${errors.message ? 'border-red-500' : 'border-gray-400'}
                 text-gray-800 bg-zinc-200 dark:text-gray-100 dark:bg-zinc-600 dark:placeholder-neutral-content/70`}
               placeholder="Type your message"></textarea>
           </div>
