@@ -15,6 +15,7 @@ const GlobeSpin = dynamic(() => import('./GlobeSpin'), {
 const ContactView = () => {
   const [form, setForm] = useState<IForm>({name: '', email: '', message: ''});
   const [errors, setErrors] = useState<IForm>({name: '', email: '', message: ''});
+  const [sendMessage, setSendMessage] = useState("Send Message");
 
   const onTextName = (value: string) => {
     setForm({...form, name: value})
@@ -33,10 +34,10 @@ const ContactView = () => {
   const validateForm = () => {
     let newErrors = {...errors};
 
-    if(form.email === '') {
+    if (form.email === '') {
       newErrors.email = 'Email is required'
     }
-    if(form.message === '') {
+    if (form.message === '') {
       newErrors.message = 'Message is required'
     }
     setErrors(newErrors)
@@ -45,11 +46,21 @@ const ContactView = () => {
 
   const onClickButton = () => {
     const errors = validateForm()
-    if(Object.values(errors).every(error => error === '')) {
+    if (Object.values(errors).every(error => error === '')) {
       setForm({name: '', email: '', message: ''})
-    }
-    console.log("send")
-    console.log(form)
+      setErrors({name: '', email: '', message: ''})
+      setSendMessage("Message Sent")
+      fetch("https://vd56h5ip1a.execute-api.us-east-1.amazonaws.com/sendgrip-stage/send-email", {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message
+        })
+      }).then(r => console.log(r))
+        .catch(e => console.log(e))
+     }
   }
 
   return (
@@ -97,7 +108,7 @@ const ContactView = () => {
             className="btn relative inline-flex items-center justify-center my-3 xxs:w-full md:w-fit p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-tr from-zinc-300 to-orange-300 group-hover:to-orange-400 hover:text-gray-900 text-gray-800 dark:bg-gradient-to-tr dark:from-zinc-500 dark:to-orange-600 dark:group-hover:to-orange-400 dark:hover:text-white dark:text-white ">
             <span
               className="relative px-5 py-2.5 xxs:w-full md:w-fit transition-all ease-in duration-75 bg-zinc-200 dark:bg-zinc-700 rounded-md group-hover:bg-opacity-0">
-              Send Message
+              {sendMessage}
             </span>
           </button>
         </div>

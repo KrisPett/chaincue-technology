@@ -10,7 +10,6 @@ if (!isServer) {
   if (!localStorage.getItem("theme"))
     localStorage.setItem("theme", "dark");
 }
-console.log("AWS")
 
 export default function App({Component, pageProps}: AppProps) {
   return (
