@@ -58,8 +58,8 @@ const ContactView = () => {
           email: form.email,
           message: form.message
         })
-      }).then(r => r.json())
-        .then(value => console.log(value))
+      }).then(res => res.json())
+        .then(value => value)
         .catch(e => console.log(e))
      }
   }

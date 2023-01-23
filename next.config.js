@@ -1,5 +1,6 @@
 /*** @type {import('next').NextConfig}*/
 module.exports = {
+    trailingSlash: true,
     images: {unoptimized: true},
     reactStrictMode: true,
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
