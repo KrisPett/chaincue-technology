@@ -6,18 +6,15 @@ import dockerLogo from '../../assets/image/docker-kubernetes.png';
 import awsLogo from '../../assets/image/aws.png';
 import polkadotLogo from '../../assets/image/polkadot-logo.png';
 import cardanoLogo from '../../assets/image/cardano-logo.png';
+import {useRouter} from 'next/navigation';
 
 const HomeView = () => {
-
-  const myLoader = ({src, width, quality}: any) => {
-    return `../../assets/image/spring-cloud.png`
-  }
-
+  const router = useRouter();
   return (
     <div className={"flex flex-col justify-center  items-center mt-20"}>
       <div className="flex flex-col xs:flex-row justify-center items-center w-5/6">
-        <Button title={"View Projects"}/>
-        <Button title={"Get a Demo"}/>
+        <Button onClick={() => router.push("projects")} title={"View Projects"}/>
+        <Button onClick={() => router.push("contact")} title={"Get a Demo"}/>
       </div>
       <article className={"flex flex-col w-5/6 lg:w-4/6 2xl:w-3/6 space-y-5 my-20"}>
         <p className={"whitespace-normal"}>Chaincue Technologies is a company that specializes in providing solutions
@@ -62,7 +59,7 @@ const HomeView = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 export default HomeView;

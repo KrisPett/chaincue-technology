@@ -33,10 +33,11 @@ const GlobeSpin = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      // @ts-ignore
-      const directionalLight = globeEl.current.scene().children.find(obj3d => obj3d.type === 'DirectionalLight');
-      directionalLight && directionalLight.position.set(1, 1, 1);
-    });
+      if (globeEl.current) {
+        const directionalLight = globeEl.current.scene().children.find(obj3d => obj3d.type === 'DirectionalLight');
+        directionalLight && directionalLight.position.set(1, 1, 1);
+      }
+    })
   }, []);
 
   return (

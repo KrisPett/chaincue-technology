@@ -1,14 +1,10 @@
 import React from 'react';
 import IconHeader from "./IconHeader";
+import {links} from "../common/Links";
+import Link from "next/link";
+import IconFooter from "./IconFooter";
 
 const Footer = () => {
-
-  const links = {
-    github: "https://github.com/KQT3",
-    gitlab: "https://gitlab.com/KQT3",
-    twitter: "https://twitter.com/chaincue",
-    linkedin: "https://www.linkedin.com/in/kristoffer-pettersson3/"
-  }
 
   return (
     <footer className="footer p-5 flex justify-center border-t-2 border-zinc-300 dark:border-zinc-600">
@@ -16,22 +12,22 @@ const Footer = () => {
         <div className={"flex flex-row w-full justify-evenly"}>
           <div className={"flex flex-col"}>
             <span className="footer-title">Projects</span>
-            <a className="link link-hover">Chain Music</a>
-            <a className="link link-hover">Crypto App</a>
+            <Link href={links.chain_music} className="link link-hover">Chain Music</Link>
+            <Link href={links.crypto_app} className="link link-hover">Crypto App</Link>
           </div>
           <div className={"flex flex-col"}>
             <span className="footer-title">Company</span>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
+            <Link href={"about"} className="link link-hover">About Me</Link>
+            <Link href={"contact"} className="link link-hover">Contact</Link>
           </div>
         </div>
         <div className={"mt-3"}>
           <span className="footer-title">Social</span>
           <div className={"mb-3 mt-3 flex xxs:space-x-2 xs:space-x-4"}>
-            <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
-            <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
-            <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
-            <IconHeader kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
+            <IconFooter kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
+            <IconFooter kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
+            <IconFooter kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
+            <IconFooter kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
           </div>
         </div>
       </div>

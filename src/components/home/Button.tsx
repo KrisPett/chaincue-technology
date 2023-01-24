@@ -2,11 +2,15 @@ import React from 'react';
 
 interface IButton {
   title: string;
+  onClick: () => void
 }
 
-const ButtonAlternative = ({title}: IButton) => {
+const ButtonAlternative = ({title, onClick}: IButton) => {
   return (
     <button
+      draggable
+      onClick={onClick}
+      onDragEnd={onClick}
       className="btn relative inline-flex items-center justify-center xxs:w-full xs:w-fit p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium
       text-gray-900 rounded-lg group
       bg-gradient-to-tr from-zinc-300 to-orange-300 group-hover:to-orange-400 hover:text-gray-900 text-gray-800

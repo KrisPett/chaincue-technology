@@ -6,16 +6,7 @@ import IconHeader from "./IconHeader";
 import ThemeSwitch1 from "./ThemeSwitch1";
 import {useTheme} from "next-themes";
 import Link from "next/link";
-
-const links = {
-  github: "https://github.com/KQT3",
-  gitlab: "https://gitlab.com/KQT3",
-  twitter: "https://twitter.com/chaincue",
-  linkedin: "https://www.linkedin.com/in/kristoffer-pettersson3/",
-  crypto_app: "https://crypto.chaincuet.com/",
-  chain_music: "https://chainmusic.chaincuet.com/",
-  wiki: "https://wiki.chaincuet.com/",
-}
+import {links} from "../common/Links";
 
 const Header = () => {
   const {theme, setTheme, resolvedTheme} = useTheme()
@@ -125,7 +116,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className={"hidden sm:flex"}>
+          <div className={"hidden sm:flex space-x-2"}>
             <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
             <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
             <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
