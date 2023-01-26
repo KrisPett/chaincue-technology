@@ -9,8 +9,8 @@ const AboutView = () => {
   const router = useRouter();
   return (
     <div className={"flex flex-col"}>
-      <section className={"flex justify-center bg-zinc-200 dark:bg-zinc-700 h-144"}>
-        <div className={"flex flex-col md:flex-row h-144 w-10/12"}>
+      <section className={"flex justify-center bg-zinc-200 dark:bg-zinc-700 min-h-144"}>
+        <div className={"flex flex-col md:flex-row min-h-144 w-10/12"}>
           <div className={"flex flex-col w-full justify-center"}>
             <p className={"text-xl md:text-4xl xxs:text-center md:text-start mt-5"}>Hello, my name is Kristoffer, a Full
               Stack Developer</p>
@@ -24,7 +24,7 @@ const AboutView = () => {
               <IconHeader kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
             </div>
           </div>
-          <div className={"w-full flex xxs:justify-center items-center md:justify-end"}>
+          <div className={"w-full flex xxs:justify-center items-center md:justify-end mb-10 mt-10"}>
             <div className={"rounded-4xl w-12/12"}>
               <Image
                 src={"https://s3.amazonaws.com/chaincuet.com.backend/linkedin.jpg"}
@@ -36,11 +36,11 @@ const AboutView = () => {
         </div>
       </section>
 
-      <section className={"flex justify-center bg-zinc-300 dark:bg-zinc-600 md:h-144"}>
-        <div className={"flex flex-col md:flex-row md:h-144 w-10/12"}>
+      <section className={"flex justify-center bg-zinc-300 dark:bg-zinc-600 md:min-h-144"}>
+        <div className={"flex flex-col md:flex-row md:min-h-144 w-10/12"}>
           <div className={"flex xxs:flex-col md:flex-row w-full justify-center md:items-center"}>
             <div className={"flex flex-col md:w-8/12"}>
-              <p className={"text-2xl md:text-4xl"}>My Background</p>
+              <p className={"text-2xl md:text-4xl mt-10"}>My Background</p>
               <p className={"text-xl mt-5 leading-10"}>
                 I am an experienced developer with a background in music production and a passion
                 for game development. My interest in programming and blockchain technology has led me to specialize in
@@ -61,10 +61,10 @@ const AboutView = () => {
         </div>
       </section>
 
-      <section className={"flex justify-center bg-zinc-200 dark:bg-zinc-700 md:h-144"}>
-        <div className={"flex flex-col md:flex-row md:h-144 w-10/12"}>
+      <section className={"flex justify-center bg-zinc-200 dark:bg-zinc-700 min-h-144"}>
+        <div className={"flex flex-col md:flex-row md:w-10/12 w-10/12"}>
           <div className={"flex flex-col w-full justify-center  "}>
-            <div className={"flex xxs:flex-col md:flex-row md:w-12/12"}>
+            <div className={"flex xxs:flex-col md:flex-row md:w-12/12 lg:w-10/12"}>
               <div className={"flex md:w-6/12 mt-5"}>
                 <p className={"text-4xl md:text-4xl"}>Work Experience</p>
               </div>
@@ -78,7 +78,7 @@ const AboutView = () => {
                   project to success.</p>
               </div>
             </div>
-            <div className={"flex xxs:flex-col md:flex-row md:w-12/12 mt-5"}>
+            <div className={"flex xxs:flex-col md:flex-row md:w-12/12 lg:w-10/12 mt-5"}>
               <div className={"flex w-6/12 "}>
                 <p className={"text-4xl md:text-4xl"}>Education</p>
               </div>
