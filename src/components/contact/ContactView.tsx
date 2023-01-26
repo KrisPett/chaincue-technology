@@ -69,7 +69,7 @@ const ContactView = () => {
       <div
         className={"flex lg:justify-end xl:justify-end xxs:justify-center xxs:w-full md:w-6/12 xl:w-6/12 border-blue-500 my-32"}>
         <div className={"flex flex-col xxs:w-10/12 xl:w-6/12"}>
-          <p className={"text-4xl text-gray-800 dark:text-gray-400 mb-5"}>Contacts</p>
+          <p className={"text-4xl text-gray-800 dark:text-gray-400 mb-5"}>Contact</p>
           <div className="form-control">
             <label className="label">
               <span className="label-text dark:text-gray-100">Name</span>

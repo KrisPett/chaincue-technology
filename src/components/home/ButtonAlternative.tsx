@@ -15,7 +15,7 @@ const ButtonAlternative = ({title}: IButton) => {
      {title}
   </span>
     </button>
-  );
-};
+  )
+}
 
 export default ButtonAlternative;
