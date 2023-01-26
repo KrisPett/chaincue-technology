@@ -26,8 +26,8 @@ const AboutView = () => {
           </div>
           <div className={"w-full flex xxs:justify-center items-center md:justify-end mb-10 mt-10"}>
             <div className={"rounded-4xl w-12/12"}>
-              <Image
-                src={"https://s3.amazonaws.com/chaincuet.com.backend/linkedin.jpg"}
+              <img
+                src={"https://s3.amazonaws.com/chaincuet.com.backend/linkedin-1000.jpg"}
                 width={"100"} height={"100"}
                 alt={"linkedin"}
                 className={"rounded-4xl xxs:w-72 lg:w-96 md:m-10"}/>
