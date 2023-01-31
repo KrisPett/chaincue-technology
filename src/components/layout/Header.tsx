@@ -7,8 +7,10 @@ import ThemeSwitch1 from "./ThemeSwitch1";
 import {useTheme} from "next-themes";
 import Link from "next/link";
 import {links} from "../common/Links";
+import {useRouter} from 'next/navigation';
 
 const Header = () => {
+  const router = useRouter();
   const {theme, setTheme, resolvedTheme} = useTheme()
   const [isTheme, setIsTheme] = useState<string>();
   const [hover, setHover] = useState(false);
@@ -42,6 +44,7 @@ const Header = () => {
                   <li>
                     <div className="dropdown dropdown-hover dropdown-bottom">
                       <label tabIndex={0}
+                             onClick={() => router.push("projects")}
                              className="btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500">
                         Projects
                         <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -63,7 +66,8 @@ const Header = () => {
                     </div>
                   </li>
                   <li><Link href="/about"
-                            className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About me</Link>
+                            className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About
+                    me</Link>
                   </li>
                   <li><Link href="/contact"
                             className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link>
