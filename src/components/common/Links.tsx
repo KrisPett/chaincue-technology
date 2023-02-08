@@ -6,4 +6,5 @@ export const links = {
   crypto_app: "https://crypto.chaincuet.com/",
   chain_music: "https://chainmusic.chaincuet.com/",
   wiki: "https://wiki.chaincuet.com/",
+  chainbot: "https://chainbot.chaincuet.com/",
 }
