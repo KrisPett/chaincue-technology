@@ -36,6 +36,19 @@ const ProjectsView = () => {
           </div>
         </div>
 
+        <div className="card card-side shadow-xl shadow-zinc-500/40 m-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
+          <div className={"xxs:hidden md:block"}>
+            <Image className={"rounded-l-lg w-full sm:max-w-prose h-full"}  width={"100"} height={"100"} src={"https://images.chaincuet.com/logos/chainbot.png"} alt="chainmusic"/>
+          </div>
+          <div className="card-body">
+            <h2 className="card-title">ChainBots</h2>
+            <p>Collection of AI integration projects</p>
+            <div className="card-actions justify-end">
+              <Button title={"Go To Project"} onClick={() => router.replace(links.chainbot)}/>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )
