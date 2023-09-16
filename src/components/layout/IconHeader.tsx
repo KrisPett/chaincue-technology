@@ -5,6 +5,7 @@ import Facebook from '../../assets/icons/facebook.svg';
 import Youtube from '../../assets/icons/youtube.svg';
 import Linkedin from '../../assets/icons/linkedin.svg';
 import Twitter from '../../assets/icons/twitter.svg';
+import Soundcloud from '../../assets/icons/soundcloud.svg';
 import Gitlab3 from '../../assets/icons/gitlab.svg';
 import Blank from '../../assets/icons/blank.svg';
 
@@ -22,6 +23,7 @@ const components: any = {
   youtube: Youtube,
   linkedin: Linkedin,
   twitter: Twitter,
+  soundcloud: Soundcloud,
   gitlab: Gitlab3,
   blank: Blank,
 }

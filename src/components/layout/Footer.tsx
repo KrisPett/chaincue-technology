@@ -2,7 +2,6 @@ import React from 'react';
 import IconHeader from "./IconHeader";
 import {links} from "../common/Links";
 import Link from "next/link";
-import IconFooter from "./IconFooter";
 
 const Footer = () => {
   return (
@@ -17,17 +16,17 @@ const Footer = () => {
           </div>
           <div className={"flex flex-col"}>
             <span className="footer-title">Company</span>
-            <Link href={"about"} className="link link-hover">About Me</Link>
             <Link href={"contact"} className="link link-hover">Contact</Link>
           </div>
         </div>
         <div className={"mt-3"}>
           <span className="footer-title">Social</span>
           <div className={"mb-3 mt-3 flex xxs:space-x-2 xs:space-x-4"}>
-            <IconFooter kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
-            <IconFooter kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
-            <IconFooter kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
-            <IconFooter kind={"linkedin"} href={links.linkedin} tooltip={"LinkedIn"} _blank={"_blank"}/>
+            <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
+            <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
+            <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
+            <IconHeader kind={"youtube"} href={links.youtube} tooltip={"Youtube"} _blank={"_blank"}/>
+            <IconHeader kind={"soundcloud"} href={links.soundcloud} tooltip={"Soundcloud"} _blank={"_blank"}/>
           </div>
         </div>
       </div>
