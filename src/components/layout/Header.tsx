@@ -61,9 +61,9 @@ const Header = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href={links.crypto_app}
+                          <Link href={links.chaincue_real_estate}
                                 className={"xxs:w-40 xs:w-80 h-20 btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>
-                            CryptoApp
+                            Chaincue Real Estate
                           </Link>
                         </li>
                         <li>

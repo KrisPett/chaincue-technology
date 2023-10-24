@@ -11,7 +11,7 @@ const Footer = () => {
           <div className={"flex flex-col"}>
             <span className="footer-title">Projects</span>
             <Link href={links.chain_music} className="link link-hover">Chain Music</Link>
-            <Link href={links.crypto_app} className="link link-hover">Crypto App</Link>
+            <Link href={links.chaincue_real_estate} className="link link-hover">Chaincue Real Estate</Link>
             <Link href={links.chainbot} className="link link-hover">AI | Chainbot App</Link>
           </div>
           <div className={"flex flex-col"}>
