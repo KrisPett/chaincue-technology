@@ -10,9 +10,9 @@ const ProjectsView = () => {
   const router = useRouter();
   return (
       <div className={""}>
-        <div className={"justify-center flex flex-col space-y-5 max-w-7xl max-w-full"}>
+        <div className={"flex flex-col max-w-full gap-10 pt-10"}>
           <div
-              className="card card-side shadow-xl shadow-zinc-500/40 m-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
+              className="card card-side shadow-xl shadow-zinc-500/40 ml-10 mr-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
             <div className={"xxs:hidden md:block"}>
               <Image className={"rounded-l-lg w-full sm:max-w-prose h-full"} width={"100"} height={"100"}
                      src={"https://images.chaincuet.com/logos/images/chanmusic.png"} alt="chainmusic"/>
@@ -30,9 +30,9 @@ const ProjectsView = () => {
           </div>
 
           <div
-              className="card card-side shadow-xl shadow-zinc-500/40 m-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
+              className="card card-side shadow-xl shadow-zinc-500/40 ml-10 mr-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
             <div className={"xxs:hidden md:block"}>
-              <Image className={"rounded-l-lg w-full sm:max-w-prose h-full"} src={alter} alt="chainmusic"/>
+              <Image className={"rounded-l-lg w-full sm:max-w-prose h-full"} src={"https://images.chaincuet.com/logos/real-estate.png"} width={"100"} height={"100"} alt="chainmusic"/>
             </div>
             <div className="card-body">
               <h2 className="card-title">Chaincue Real Estate</h2>
@@ -46,7 +46,7 @@ const ProjectsView = () => {
             </div>
           </div>
           <div
-              className="card card-side shadow-xl shadow-zinc-500/40 m-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
+              className="card card-side shadow-xl shadow-zinc-500/40 ml-10 mr-10 rounded-lg h-96 bg-zinc-300 dark:bg-zinc-700">
             <div className={"xxs:hidden md:block"}>
               <Image className={"rounded-l-lg w-full sm:max-w-prose h-full"} width={"100"} height={"100"}
                      src={"https://images.chaincuet.com/logos/chainbot.png"} alt="chainmusic"/>
