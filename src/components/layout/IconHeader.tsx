@@ -8,6 +8,7 @@ import Twitter from '../../assets/icons/twitter.svg';
 import Soundcloud from '../../assets/icons/soundcloud.svg';
 import Gitlab3 from '../../assets/icons/gitlab.svg';
 import Blank from '../../assets/icons/blank.svg';
+import X from '../../assets/icons/x-social-media-black-icon.svg';
 
 interface ISocialIcon {
   kind: string;
@@ -22,7 +23,7 @@ const components: any = {
   facebook: Facebook,
   youtube: Youtube,
   linkedin: Linkedin,
-  twitter: Twitter,
+  x: X,
   soundcloud: Soundcloud,
   gitlab: Gitlab3,
   blank: Blank,

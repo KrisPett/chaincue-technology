@@ -1,7 +1,7 @@
 export const links = {
   github: "https://github.com/KrisPett",
   gitlab: "https://gitlab.com/KrisPett",
-  twitter: "https://twitter.com/KP_chaincue",
+  x: "https://x.com/KP_chaincue",
   youtube: "https://www.youtube.com/channel/UCGOJUEqzsDLBdDR1Xbal1zg",
   soundcloud: "https://soundcloud.com/krispett",
   crypto_app: "https://crypto.chaincuet.com/",

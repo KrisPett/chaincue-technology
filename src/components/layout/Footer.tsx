@@ -24,7 +24,7 @@ const Footer = () => {
           <div className={"mb-3 mt-3 flex xxs:space-x-2 xs:space-x-4"}>
             <IconHeader kind={"github"} href={links.github} tooltip={"Github"} _blank={"_blank"}/>
             <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
-            <IconHeader kind={"twitter"} href={links.twitter} tooltip={"Twitter"} _blank={"_blank"}/>
+            <IconHeader kind={"x"} href={links.x} tooltip={"X"} _blank={"_blank"}/>
             <IconHeader kind={"youtube"} href={links.youtube} tooltip={"Youtube"} _blank={"_blank"}/>
             <IconHeader kind={"soundcloud"} href={links.soundcloud} tooltip={"Soundcloud"} _blank={"_blank"}/>
           </div>
