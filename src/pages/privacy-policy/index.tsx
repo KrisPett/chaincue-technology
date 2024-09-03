@@ -54,7 +54,7 @@ const Index = () => {
                               review this Privacy Policy periodically for any changes.</p>
 
                           <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">5. Contact Us</h3>
-                          <p className="text-gray-800 dark:text-gray-300">If you have any questions or concerns about this Privacy Policy, please contact us at</p>
+                          <p className="text-gray-800 dark:text-gray-300">If you have any questions or concerns about this Privacy Policy, please contact us.</p>
                       </div>
                   </div>
               </div>
