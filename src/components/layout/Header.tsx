@@ -75,10 +75,7 @@ const Header = () => {
                       </ul>
                     </div>
                   </li>
-                  {/*<li><Link href="/about"*/}
-                  {/*          className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>About*/}
-                  {/*  me</Link>*/}
-                  {/*</li>*/}
+
                   <li><Link href="/contact"
                             className={"btn btn-ghost text-gray-600 dark:text-gray-200 hover:text-orange-800 dark:hover:text-orange-500"}>Contact</Link>
                   </li>
@@ -141,7 +138,7 @@ const Header = () => {
             <IconHeader kind={"gitlab"} href={links.gitlab} tooltip={"Gitlab"} _blank={"_blank"}/>
             <IconHeader kind={"x"} href={links.x} tooltip={"X"} _blank={"_blank"}/>
             <IconHeader kind={"youtube"} href={links.youtube} tooltip={"Youtube"} _blank={"_blank"}/>
-            <IconHeader kind={"soundcloud"} href={links.soundcloud} tooltip={"Soundcloud"} _blank={"_blank"}/>
+            {/* <IconHeader kind={"soundcloud"} href={links.soundcloud} tooltip={"Soundcloud"} _blank={"_blank"}/> */}
           </div>
         </div>
       </div>
