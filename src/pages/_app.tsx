@@ -8,7 +8,7 @@ const isServer = typeof window === "undefined";
 
 if (!isServer) {
   if (!localStorage.getItem("theme"))
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem("theme", "light");
 }
 
 export default function App({Component, pageProps}: AppProps) {
