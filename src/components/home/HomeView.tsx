@@ -1,12 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import Image from "next/image";
-// You'll need to replace these with appropriate disaster/news related icons
-import aiLogo from "../../assets/image/ai-technology.png";
-import newsLogo from "../../assets/image/news-monitoring.png";
-import socialMediaLogo from "../../assets/image/social-media.png";
-import realtimeLogo from "../../assets/image/realtime-alerts.png";
-import globalLogo from "../../assets/image/global-coverage.png";
 import { useRouter } from "next/navigation";
 
 const HomeView = () => {
